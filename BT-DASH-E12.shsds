@@ -1,0 +1,36 @@
+{
+  "AutomaticReconnect": true,
+  "SerialPortName": "COM10",
+  "IsConnecting": false,
+  "IsEnabled": false,
+  "LogIncomingData": false,
+  "IsConnected": false,
+  "BaudRate": 115200,
+  "UpdateMessages": [
+    {
+      "Message": {
+        "Expression": "'{'+isnull([Rpms], '0')+'&'+isnull([SpeedKmh], '0')+'&'+isnull([DataCorePlugin.Computed.Fuel_Percent], '0')+'&'+isnull([WaterTemperature], '0')+'&'+isnull([TurnIndicatorLeft], '0')+'&'+isnull([TurnIndicatorRight], '0')+'&'+isnull([Handbrake], '0')+'&'+isnull([OilTemperature], '0')+'}'"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 0
+    }
+  ],
+  "OnConnectMessage": {
+    "Expression": ""
+  },
+  "OnDisconnectMessage": {
+    "Expression": ""
+  },
+  "DtrEnable": true,
+  "RtsEnable": true,
+  "EditorExpanded": true,
+  "Name": "Custom Serial device",
+  "Description": "BT-DASH-E12",
+  "LastErrorDate": "0001-01-01T00:00:00",
+  "LastErrorMessage": null,
+  "IsFreezed": false,
+  "SettingsBuilder": {
+    "Settings": [],
+    "IsEditMode": false
+  }
+}
