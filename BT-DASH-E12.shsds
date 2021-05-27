@@ -9,7 +9,7 @@
   "UpdateMessages": [
     {
       "Message": {
-        "Expression": "'{'+isnull([Rpms], '0')+'&'+isnull([SpeedKmh], '0')+'&'+isnull([DataCorePlugin.Computed.Fuel_Percent], '0')+'&'+isnull([WaterTemperature], '0')+'&'+isnull([TurnIndicatorLeft], '0')+'&'+isnull([TurnIndicatorRight], '0')+'&'+isnull([Handbrake], '0')+'&'+isnull([OilTemperature], '0')+'}'"
+        "Expression": "'{'+round(isnull([Rpms], '0'), 0)+'&'+round(isnull([SpeedKmh], '0'), 0)+'&'+round(isnull([DataCorePlugin.Computed.Fuel_Percent], '0'), 0)+'&'+round(isnull([WaterTemperature], '0'), 2)+'&'+isnull([TurnIndicatorLeft], '0')+'&'+isnull([TurnIndicatorRight], '0')+'&'+isnull([Handbrake], '0')+'&'+round(isnull([OilTemperature], '0'), 2)+'}'"
       },
       "IsEnabled": true,
       "MaximumFrequency": 0
@@ -26,8 +26,8 @@
   "EditorExpanded": true,
   "Name": "Custom Serial device",
   "Description": "BT-DASH-E12",
-  "LastErrorDate": "0001-01-01T00:00:00",
-  "LastErrorMessage": null,
+  "LastErrorDate": "2021-05-22T01:25:08.7574711+02:00",
+  "LastErrorMessage": "Das Zeitlimit für die Semaphore wurde erreicht.\r\n",
   "IsFreezed": false,
   "SettingsBuilder": {
     "Settings": [],
